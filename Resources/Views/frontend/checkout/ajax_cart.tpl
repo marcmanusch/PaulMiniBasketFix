@@ -10,7 +10,7 @@
     					<td><small>{$sBasket.sShippingcostsWithTax|currency}</small></td>
   				</tr>
 				<tr>
-    					<td colspan="2"><small>(Geschätzte Versandkosten, Abweichungen je nach Lieferadresse möglich)</small></td>
+    					<td colspan="2">Alle Preise <a title="Versandkosten" href="{url controller=custom sCustom=6}" style="text-decoration:underline">zzgl. Versandkosten</a><br><br>Zwischensumme</small></td>
   				</tr>
 				<tr>
     					<td>Gesammtsumme ohne MwSt: </td>
