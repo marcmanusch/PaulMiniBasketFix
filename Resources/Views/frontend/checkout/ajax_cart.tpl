@@ -4,11 +4,7 @@
 	{$smarty.block.parent}
 	{if $sBasket.Quantity > 0}
 		<div class="paul-cart-text">
-			<table class="table">
-				<tr>
-    					<td>Versandkosten: </td>
-    					<td><small>{$sBasket.sShippingcostsWithTax|currency}</small></td>
-  				</tr>
+			<table class="table paul-cart-table">
 				<tr>
     					<td colspan="2"><small>Alle Preise <a title="Versandkosten" href="{url controller=custom sCustom=6}">zzgl. Versandkosten</a></small></td>
   				</tr>
