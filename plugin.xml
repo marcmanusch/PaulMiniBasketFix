@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Miniwarenkorb rechtssicher</label>
+
+    <version>1.0.0</version>
+    <link>http://paulgurkesshop.de</link>
+    <author>PaulGurkes GmbH</author>
+    <compatibility minVersion="5.2.0"/>
+    <version>1.0.0</version>
+
+    <changelog version="1.0.0">
+        <changes lang="de">Release</changes>
+    </changelog>
+</plugin>
