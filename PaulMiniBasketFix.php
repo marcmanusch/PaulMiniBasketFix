@@ -2,7 +2,6 @@
 
 /**
  * Marc Manusch
- * PaulGurkes GmbH 19.01.2018
  */
 
 namespace PaulMiniBasketFix;
