@@ -19,7 +19,13 @@
 					</tr>
 				{/foreach}
 				<tr>
-					<td><b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b></td>
+					<td>
+						{if $sUserLoggedIn == true}
+							<b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b>
+						{else}
+							<b>{s name="paulSumWithTax"}Gesamtsumme inkl. Versandkosten: {/s}</b>
+						{/if}
+					</td>
     					<td>
 						{if $sUserLoggedIn == true}
     							<b>{($sBasket.Amount + $sShippingcosts)|currency}</b>
