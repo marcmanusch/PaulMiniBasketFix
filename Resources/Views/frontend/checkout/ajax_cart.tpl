@@ -28,7 +28,7 @@
 					</td>
     					<td>
 						{if $sUserLoggedIn == true}
-    							<b>{($sBasket.Amount + $sShippingcosts)|currency}</b>
+    							<b>{($sBasket.Amount + $sBasket.sShippingcostsWithTax)|currency}</b>
 						{else}
 							<b>{$sBasket.Amount|currency}</b>
 						{/if}
