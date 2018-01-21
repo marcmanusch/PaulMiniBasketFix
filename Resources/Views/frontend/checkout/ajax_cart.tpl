@@ -9,7 +9,7 @@
     					<td colspan="2"><small>Alle Preise <a title="Versandkosten" href="{url controller=custom sCustom=6}">zzgl. Versandkosten</a></small></td>
   				</tr>
 				<tr>
-    					<td>Gesammtsumme ohne MwSt: </td>
+    					<td>{s name="frontend/checkout/ajax_cart"}Gesamtsumme ohne MwSt: {/s}</td>
     					<td><small>{$sBasket.AmountNetNumeric|currency}</small></td>
   				</tr>
 				{foreach key=schluessel item=wert from=$sBasket.sTaxRates}
@@ -19,7 +19,7 @@
 					</tr>
 				{/foreach}
 				<tr>
-					<td><b>Gesammtsumme:</b></td>
+					<td><b>{s name="frontend/checkout/ajax_cart"}Gesamtsumme: {/s}</b></td>
     					<td><b> {$sBasket.Amount|currency}</b></td>
   				</tr>
 			</table>
