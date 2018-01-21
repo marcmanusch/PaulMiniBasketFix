@@ -20,8 +20,8 @@
 				{/foreach}
 				{if $sUserLoggedIn == true}
 					<tr>
-						<td><small>Versandkosten:</small></td>
-						<td><small>{$sShippingcosts}</small></td>
+						<td>Versandkosten:</td>
+						<td>{$sShippingcosts|currency}</td>
 					</tr>
 				{/if}
 				<tr>
