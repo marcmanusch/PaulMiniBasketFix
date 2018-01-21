@@ -19,9 +19,9 @@
     					<td>
 						<b>
 						{if $sUserLoggedIn == true}
-    							{($sBasket.Amount + $sShippingcosts)|currency}</b>
+    							{($sBasket.Amount + $sShippingcosts)|currency}*
 						{else}
-							<b>{$sBasket.Amount|currency}
+							{$sBasket.Amount|currency}*
 						{/if}
 						</b>
 					</td>
@@ -40,6 +40,11 @@
 				
 			</table>
 		</div>
+		<div class="paulAdditionalTextAjax">
+        		<p>* {s name="paulAjaxCartText1"}Die exakten Versandkosten für ein spezifisches Lieferland erfahren Sie auf der Seite "Zur Kasse".{/s}</p>
+    		</div>
 	{/if}
+	
+	
 {/block} 
 
