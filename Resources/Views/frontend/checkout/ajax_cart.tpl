@@ -8,16 +8,6 @@
 				<tr>
     					<td colspan="2"><small>Alle Preise <a title="Versandkosten" href="{url controller=custom sCustom=6}">zzgl. Versandkosten</a></small></td>
   				</tr>
-				<tr>
-    					<td>{s name="paulSumWithoutTax"}Gesamtsumme ohne MwSt: {/s}</td>
-    					<td><small>{$sBasket.AmountNet|currency}</small></td>
-  				</tr>
-				{foreach key=schluessel item=wert from=$sBasket.sTaxRates}
-					<tr>
-    						<td>zzgl. {$schluessel}% MwSt: </td>
-    						<td><small>{$wert|currency}</small></td>
-					</tr>
-				{/foreach}
 				{if $sUserLoggedIn == true}
 					<tr>
 						<td>Versandkosten:</td>
@@ -36,6 +26,18 @@
 						</b>
 					</td>
   				</tr>
+				<tr>
+    					<td>{s name="paulSumWithoutTax"}Gesamtsumme ohne MwSt: {/s}</td>
+    					<td><small>{$sBasket.AmountNet|currency}</small></td>
+  				</tr>
+				{foreach key=schluessel item=wert from=$sBasket.sTaxRates}
+					<tr>
+    						<td>zzgl. {$schluessel}% MwSt: </td>
+    						<td><small>{$wert|currency}</small></td>
+					</tr>
+				{/foreach}
+
+				
 			</table>
 		</div>
 	{/if}
