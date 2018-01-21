@@ -28,7 +28,7 @@
   				</tr>
 				<tr>
     					<td>{s name="paulSumWithoutTax"}Gesamtsumme ohne MwSt: {/s}</td>
-    					<td><small>{$sBasket.AmountNet|currency}</small></td>
+    					<td><small>{$sBasket.AmountNetNumeric|currency}</small></td>
   				</tr>
 				{foreach key=schluessel item=wert from=$sBasket.sTaxRates}
 					<tr>
