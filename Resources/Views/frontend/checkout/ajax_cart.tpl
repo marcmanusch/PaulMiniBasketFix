@@ -13,8 +13,10 @@
     					<td><small>{$sBasket.AmountNetNumeric|currency}</small></td>
   				</tr>
 				<tr>
-    					<td>zzgl. 19% MwSt: </td>
-    					<td><small>{$sBasket.sAmountTax|currency}</small></td>
+					{foreach key=schluessel item=wert from=$sBasket.sTaxRates}
+    						<td>zzgl. {$schluessel}% MwSt: </td>
+    						<td><small>{$wert|currency}</small></td>
+					{/foreach}
   				</tr>
 				<tr>
 					<td><b>Gesammtsumme:</b></td>
