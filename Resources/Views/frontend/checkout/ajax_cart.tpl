@@ -18,17 +18,17 @@
     						<td><small>{$wert|currency}</small></td>
 					</tr>
 				{/foreach}
+				{if $sUserLoggedIn == true}
+					<tr>
+						<td><small>Versandkosten:</small></td>
+						<td><small>{$sShippingcosts}</small></td>
+					</tr>
+				{/if}
 				<tr>
-					<td>
-						{if $sUserLoggedIn == true}
-							<b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b>
-						{else}
-							<b>{s name="paulSumWithTaxLogin"}Gesamtsumme inkl. Versandkosten: {/s}</b>
-						{/if}
-					</td>
+					<td><b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b></td>
     					<td>
 						{if $sUserLoggedIn == true}
-    							<b>{($sBasket.Amount + $sBasket.sShippingcostsWithTax)|currency}</b>
+    							<b>{($sBasket.Amount + $sShippingcosts)|currency}</b>
 						{else}
 							<b>{$sBasket.Amount|currency}</b>
 						{/if}
