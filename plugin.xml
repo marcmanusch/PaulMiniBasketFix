@@ -3,9 +3,12 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Miniwarenkorb rechtssicher</label>
 
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <compatibility minVersion="5.2.0"/>
-    <version>1.0.0</version>
+        
+    <changelog version="1.0.1">
+        <changes lang="de">Added better tax handling for different taxes</changes>
+    </changelog>
 
     <changelog version="1.0.0">
         <changes lang="de">Release</changes>
