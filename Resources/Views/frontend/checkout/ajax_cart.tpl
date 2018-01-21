@@ -40,6 +40,11 @@
 				
 			</table>
 		</div>
+		<div class="paulAdditionalTextAjax">
+        		<p>* {s name="paulAjaxCartText1"}Die exakten Versandkosten für ein spezifisches Lieferland erfahren Sie auf der Seite "Zur Kasse".{/s}</p>
+    		</div>
 	{/if}
+	
+	
 {/block} 
 
