@@ -21,9 +21,9 @@
 				<tr>
 					<td>
 						{if $sUserLoggedIn == true}
-							<b>{s name="paulSumWithTaxLogin"}Gesamtsumme: {/s}</b>
+							<b>{s name="paulSumWithTax"}Gesamtsumme: {/s}</b>
 						{else}
-							<b>{s name="paulSumWithTax"}Gesamtsumme inkl. Versandkosten: {/s}</b>
+							<b>{s name="paulSumWithTaxLogin"}Gesamtsumme inkl. Versandkosten: {/s}</b>
 						{/if}
 					</td>
     					<td>
