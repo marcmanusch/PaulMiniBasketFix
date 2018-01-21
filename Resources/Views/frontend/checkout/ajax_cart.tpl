@@ -10,7 +10,7 @@
   				</tr>
 				{if $sUserLoggedIn == true}
 					<tr>
-						<td>Versandkosten:</td>
+						<td>Versandkosten ({$sCountry.countryname}):</td>
 						<td>{$sShippingcosts|currency}</td>
 					</tr>
 				{/if}
