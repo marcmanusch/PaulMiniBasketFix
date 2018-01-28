@@ -41,7 +41,7 @@
 			</table>
 		</div>
 		
-		{include file='frontend/index/bing_tracking.tpl'}
+		{include file='frontend/checkout/cart_footer.tpl'}
 		
 		<div class="paulAdditionalTextAjax">
         		<p>* {s name="paulAjaxCartText1"}Die exakten Versandkosten für ein spezifisches Lieferland erfahren Sie auf der Seite "Warenkorb bearbeiten".{/s}</p>
