@@ -49,8 +49,6 @@ class Frontend implements SubscriberInterface
         
         // aggign to frontend
         $view->assign('paulShowShipping', $paulShowShipping);
-        $view->assign('calculateShippingCosts', true);
-		$view->assign('sTargetAction', 'cart');
 
     }
 }
