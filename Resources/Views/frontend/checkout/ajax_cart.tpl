@@ -40,9 +40,7 @@
 				
 			</table>
 		</div>
-		
-		{include file='frontend/checkout/paul_basket.tpl'}
-		
+				
 		<div class="paulAdditionalTextAjax">
         		<p>* {s name="paulAjaxCartText1"}Die exakten Versandkosten für ein spezifisches Lieferland erfahren Sie auf der Seite "Warenkorb bearbeiten".{/s}</p>
     		</div>
