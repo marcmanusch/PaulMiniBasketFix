@@ -36,10 +36,19 @@ class Frontend implements SubscriberInterface
      */
     public function onFrontendPostDispatch(\Enlight_Event_EventArgs $args)
     {
+        
+        $config = $this->container->get('shopware.plugin.config_reader')->getByPluginName('PaulMiniBasketFix', $shop);
+        
+        // get plugin settings
+        $paulShowShipping = $config['paulShowShipping'];
+
         /** @var $controller \Enlight_Controller_Action */
         $controller = $args->getSubject();
         $view = $controller->View();
         $view->addTemplateDir($this->container->getParameter('paul_mini_basket_fix.plugin_dir') . '/Resources/Views');
+        
+        // aggign to frontend
+        $view->assign('paulShowShipping', $paulShowShipping);
 
     }
 }
