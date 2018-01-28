@@ -41,7 +41,11 @@
 			</table>
 		</div>
 		
-		{include file='frontend/checkout/cart_footer.tpl'}
+		{block name="frontend_checkout_shipping_costs_country_include"}
+			{$smarty.block.parent}
+		{/block}
+
+		
 		
 		<div class="paulAdditionalTextAjax">
         		<p>* {s name="paulAjaxCartText1"}Die exakten Versandkosten für ein spezifisches Lieferland erfahren Sie auf der Seite "Warenkorb bearbeiten".{/s}</p>
