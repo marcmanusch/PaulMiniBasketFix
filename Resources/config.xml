@@ -5,7 +5,7 @@
 
 		<element type="boolean">
 			<name>paulShowShipping</name>
-			<label lang="de">UET Tag ID (z.B.: 9827381):</label>
+			<label lang="de">Zeige Versandkalkulation:</label>
 		</element>
 	</elements>
 </config>
